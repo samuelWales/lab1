@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set="a b c d e f g h"
+correct_answer="h g f e d c b a"
+current_answer=$(./reverse $set)
+
+if [ "$current_answer" = "$correct_answer" ]
+then 
+		echo "Successfully"
+else
+		echo "Unsuccessfully"
+fi
